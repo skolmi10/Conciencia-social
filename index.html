@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  
+<head>
+  <meta charset="utf-8">
+  <title>The element selector</title>
+  <body>
+    <style>
+body {
+    background-color: rgb(209, 129, 224);
+  }
+  
+  h1 {
+    color: rgb(241, 140, 196);
+  }
+  
+  #Sociedad {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .menu ul {
+    display: flex;
+    padding: 0;
+    margin-left: 80px;
+    margin:0;
+    list-style: none;
+    
+  }
+  
+  .menu a {
+    display: block;
+    padding: 1em;
+    background-color: grey;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .menu a:hover {
+    background-color: rgb(134, 250, 115);
+
+  }
+  
+  .menu ul li ul {
+    display: none;
+    
+  }
+  
+  .menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+  }
+  .menu{
+    border: 5px white dashed;
+    width: 27.5%;
+    margin-left: 40px;
+  }
+
+#titulo1
+ { background: grey;
+    width: 28%;
+    margin-left: 500px;
+    
+  } 
+
+ #tema2{
+  background-color: white;
+   width: 25%;
+}
+#tema3{
+  background: white;
+}
+
+#contactos{
+  background: white;
+  width: 12%;
+}
+
+.margen{
+  background: white;
+  margin: 15px 20px 25px 400px;
+  padding: 5px px 30px 30px; 
+  width: 28%;
+  height:40px;
+}
+ #container {
+ width: px;
+ margin-left: 80px;
+}
+#imagen1 {
+  margin-left: 800px;
+}
+
+#imagen1 {
+    position: relative;
+top: 80px; left: 80px; }
+
+
+</style>
+</head>
+<body>
+   <div id="container">
+  <nav class="menu">
+    <ul>
+      <li><a href="#">INICIO</a></li>
+      <li><a href="#">CONTENIDOS</a>
+        <ul>
+          <li><a href="#titulo1">CONCIENCIA SOCIAL</a></li>
+          <li><a href="#tema2">LISTA CONCIENCIA SOCIAL</a></li>
+          <li><a href="#tema3">TIPOS DE CONCIENCIA SOCIAL</a></li>
+        </ul>
+      </li>
+      <li><a href="#contactos">CONTACTOS</a></li>
+    </ul>
+  </nav>
+ 
+       
+  <h1 id="titulo1" class="margen"> CONCIENCIA SOCIAL</h1>
+     
+  <h3 id="seccion1">¿QUE ES?</h3>
+
+     <p>
+  
+  <article >
+ La conciencia sociales la capacidad de una persona para comprender y estar atento a las necesidades, problemas y realidades de otras personas en su comunidad y en la sociedad en general. Implica un nivel de empatía, comprensión y responsabilidad hacia las circunstancias que afectan a otros, lo que puede llevar a acciones que buscan mejorar el bienestar colectivo.
+  </article>
+     <P>
+  
+       <article >
+¿como se forma la conciencia social? la conciencia social se manifiesta bajo la cristalización de la condición de clase y se expresa en el arte, la filosofía, la religión y muchas otras expresiones culturales, todas expresiones de una condición mayor: la ideología.
+  </article>
+  <br>
+  
+
+     
+     <p> Lista sobre la conciencia Social:</p>
+     
+          <img id="imagen1"src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMWFRUVFRUVFhUVFxgXFxUVFRUWGBUSFhUYHSggGRolHRcVITEhJSkrLi4uFx8zODMtOCgtLisBCgoKDg0OGxAQGy0mICYtLS8tLi0tLS0tLS0tLS0tLS0tLi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMUBAAMBEQACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQYEBwECAwj/xABJEAABAwIDBQUEBgYHBwUAAAABAAIDBBEFEiEGMUFRYRMicYGRBzJSoRQjQnKxwRZigpKywkNTc6Lh8PEzRIOz0dLiFSQ0Y6P/xAAaAQEAAgMBAAAAAAAAAAAAAAAABAUBAgMG/8QAMREAAgIBAwMCBQIHAAMAAAAAAAECAwQREiEFMUETURQiMmFxFUIjQ1KBkaGxM2LR/9oADAMBAAIRAxEAPwDdqAIAgCAIAgCAIAgCAIDpNM1oLnODQN5JsB5laTnCK1kzKi5cJFF2j2vLgY6e4buLxo53Rl9w67/BUmX1Bzeyt8Fpj4Sit8yizbRwxuLJJjG4a5X52nx3a+Kh/A5D5j/0lvJoXDMOp29p2bp5HnkzP+JIC7Q6dlPvLT+5xnlY67LU86b2i5vcFWfu3P4PXb9PvX8xHP4il/yz2b7VA3TtqoEcDr8i5dFh5aXFhq7sbzAmYdp3SD6Wydzsrb5wdQALlpb+RCr5wyY3JS79iXBY8q+OxdsE22a4AVFhppKzVp5EgbvEX8lY4/U9Hst4aIF2C/qr5RaaSvilF45GP+64E+YVnC6ufKaIUq5R7oyV2NAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCA4e4AEk2A1JPAc1q5KK1MrXwUzGdtSHFlO0G2naO1B+63iOp9FS5PVdHtrLKjp7a1kUjHMe0MlVPe3Bzvk1g49AFAUMrJfPkna49CKk2apxB14y+npQfevZ8nO1v9B1Vhtowo88yIu63IfHESbo9n6WP3YWk78zxndfnd11XW9Qvn50X2JUMSqPZakiGDkPQKK7pvyzuoR9jtmK13y9zO2PseNRTMkFpGNeOT2h34rpDIth9LZrKqEu6RhMwKnaSWM7MuBa7syWggixBb7pHkpK6hbxu0enucfha124O1PA6niyRh0rW+627Q9rfhu4gOA4fmkp15M9Zva/8ApmMXTDRcrwRo2xhbJkmjlhcOL27vNpv5gKR+l2JbqpJnD46Gu2cWvyXjZ3a+RoDmS9vEd4Ls3kHG5aeh9FrHKyMaWliYnj1XrWD5NiYPjUNQ28Z7w95h0c3y4jqFd4+XC5ap8lTbROp6NEipJyCyAgCAIAgCAIAgCAIAgCAIAgCAIAgCwDX22mNOfI6BhtGywdb7b95ueQ0FuYK891LLlKeyPYuMHGSj6klqa5xLaUNkMMET6iVvvBnuNPJztdf83XOjp2sd9stq/wBnW3MUZba1qyvSbK1NS/tJGQ07eLWDW3g24J8SFZvqFFMNqepDWJbZPc1oX1rQAABYDQAbgBwC83ZNzk5Mt4JRW1HcBc+5lnoyncVuoNmrkj0FA5bekzX1EcOonJ6TM+ojydERvC0aaNlJHmsamx41dJHK3LIxr28nAG3UX3HqF1qyLKnrBnOdcLFpJFWqtlJIH9tQyFrhvjcdHD4QToR0d6q5q6jXdH07l/cr54c65bqmTuz+PGQ2IdDUMvdhuDcaFzDxHPlxUPIxJ4/8Sp/KSaro3LbYuTaux+PvnzRy2zsAIcNMwvYkjmDb1Vn0/Nd3yy8FbmYvpPVFnVqQggCAIAgCAIAgCAIAgCAIAgCAIAgI/HsQ7CB8nECzfvO0b5KNl2elU5HWmv1JpGmsTjlk7jHlmbWSX7VjvDP1jr3uF+a83jzrg3bPl+EX9kZabIcHbD6COFmSJoaN55uPxOO8lcb8my6WsmbV0xrWiMmyj6nQ9oIC5bxg5M0ctES9HhymVUakadpKwYb0U2GOR5XGU3C+i6/DHN3HWTDOiw8cyrjAqMN6KPZjHaFpD1dBbcoNlLRJhYRzm23qM1od9dThO5lfYgNomSRWqYgHNaQZoiLhzR/StH2XjmOHgrnBuVsPRm/wQMmDhL1Yr8lu2OxVomhmabsksL82yCwv4G1/BR8bXHydrN8jS6jcjbS9QuUUIWQEAQBAEAQBAEAQBAEAQBAEAQBAVP2gYp2cQhBAz3c88o26n1P4FVPU7Xoq4+Sfg1pyc32Rq/AK7to3TfZfI/J0Y2zG/wAN/FxVTnVRqlGHsuSzxrHZHc/ckwoB3PWCLMVvCO5mJPRFhw+h6KyppINlhZKHDuitqqNCBZaRdbtVG2pNFRwOq6lou8MLWQw/20xvl8ACeG/RTI1pEdzbMzD8OxQuL56qnjBFmwQwZ2NPMyyEPcfQaLbajXVmbPFWt90U027eZKc248JAT6I4oypM6QzRTPfEAWSx2L4nizg13uvbvD2HUZmki4I3ghcZ0Jo6Rs0MCvw9V91BLrtKziNFZVN1RPrsIkhQySdSOB1H+dFmMnF6oNbloyq7PVBp6mShcbNLi+A9Hd7IPK/m081eZVfrVRvh38lbjy9OyVUu3g+h8Gq+1gjk+JoJ+8NHD1BVtjT31KSKy2OybRmrucwgCAIAgCAIAgCAIAgCAIAgCAI3oDRftfxgubO5rrBzmwN+6D3h52f5FUtL9fMbfaJZyTqxUvLMHZGHLRwjm0u/fcXfgQq7qct2QydhLSpEyFAJBN4VS7lOx69WRbZlwwqiV5RVwVlthG+0TGJYIYqWkNquskEMJ+AadrN0DWnfwuDwU9LREMmdl9m6ehhEMDba3e86vlfxke7eT8hwWQS6AICB2vwqSWIS01m1cF5Kd3M/agceMcgGUjdfKd4FgPXCcQjraaOojFg9ty0+8x40fG7k5rgQfBc5wTRvCehD4pR71UZFRYVTKlXw5SqW2GjLKt6mGVyR1KXt7Zk1LMNCHG56Ncxw/Fy9B0p7qZQKvPW2yMkby9n1ZmifF8D7gfqv1/iDl16XZ8rh7NkfPhpJSXktitSCEAQBAEAQBAEAQBAEAQBAEAQHDhotZ/SZj3PmT2mzWjij5yOd+6LfzFVHS4fxJyLLOlrCKLRhkWWGJvwxsHo0Kmy5brpP7lnQtK4okKVl3BcYLVmZPRFuwmDcrrFrK26ZcKOOzVdVx0iVkpaspWDH6Tjta+Qa0MMEMDd4H0hpkkltwcbAeC6Gpe0AQBAEBT/Z/SGKbFI7mwxB7wODRNFHLYDh76Am8Xp9LqJfBaEiqZScXg3qgyIFrTIgCq8mlO9pTPqYjykI9Wn/AKK96M+ZIrOpLiLNk+zvELSwk7pomg+JYHj5gjzXPFn6WW4/dm2VDfjqXsbSXoSmCAIAgCAIAgCAIAgCAIAgCAIAtZ9gfL3tOpyZoeRdIzwOcf8AX5Kt6dJJWL7ssMuOux/YuwFtOWi85a9Zt/cuYLSKM7DG95b0/Uc7HwXbBY9yvsWJU3ss4VqiAVLBogzGcQ4GWnopQPiDTPG5w8CAFkFtQBAEAQFS2FrTNUYo/XKK4xtPPsYY4nWPHViAstey7Sudq+U3rfJScYZvVDkotqWVSUalVD7lhEqHtJ/+Oz+2H8D1c9G+uX4K7qX0RLfskwn6IG6H6jUfsn8ioz1ebx7nd6LG59jdK9QuyKALICAIAgCAIAgCAIAgCAIAgCAID5/9rFEGSX4R1bXHoyTvfm1UuL8mRZD31LO356YS9mSzlQS+pltHsjPwneu1Hc5Wl5wXeF6DFKi7yWJWZCKZt259NPSYkxriyBz4arKCSKWbLmkIAuQxzWu06oC3UtSyRjZI3B7HgOa5pDmuadxBGhCA9UAQEFtptGygpXzkZn6Mhj4yzO9yMAanmbcAUB12Dwl9NQwxy/7ZwM097A9tMS+S9tLgut5ICaq/dK0s7G0O5SsY4qiyS1oKjN7xVNLuWUSne0k/+3j/ALX+RyuujfXIrupP5ImwfZ1T5paUfBEHHyisPmQuWPHdnP8ALNsh7cVf2NsL0hShAEAQBAEAQBAEAQBAEAQBAEAQGovbXh+ZsxH2oWyD70Ttf7rR6qomvTzYv3WhY1/PiyXsyB2fre2p4pOJaA77ze675j5qozqvTukiyxrPUqTJzDXWcuFT+Y2sXBdsGl3K+xZFVfEtDSrZFeHNuLFZBrDaKSbASailj7bD5H3lpibfRZHH34XWOWNx+yRYHlcICf2a9puG1gAbOIpP6qezHX5NJOV3kSgLJNisLYnzF1o42Oe55BDQ1oJJBIAOg4ICobKU02IysxSsbkiaCaGm3hjXf71J8Ujha3AAoC+IDFxB9mrldLSJvWtWUnGJN6ocqRbUxKtJvVQ2WC7FM9pZ+piH/wBh/hV50dcyZW9TfY2x7NIQJTzbA0D1aD+Cz0/R5M2YzdVTFGxFelSEAQBAEAQBAEAQBAEAQBAEAQBAas26xZk8jmOLWxszwguIGYm4ebnw0HT087kXTtyUorsy5x6lXS5SfdGuPZ1VfVywE3Mb8w8HaG3S7f7y6dYq+mxGvTZ94Fzp32cFSxejLGS4LbhFRuVxjWFddAuNDNmaruqW6JWTjozJXU5mDj2HNqaaandulifH+80gHxBsfJAU32I4NDDhkUzGASVGZ8j97nWe4MbfgABu6nmgJX2qwOfhNYBe4izeTHNc75AoCz00DY2NYwWaxrWtHJrQAB6ID0KAhcXqd6hZEyTVApeMT71QZEy2piQZUEllK2wmZLV00GYDI+8lzYNDuzdqTp7o+a9F06uUKJT9+xU5s1K1RNmbJYsIp2uble2QiM2N9C61wRpoVX4dsqb9JLuyVlVxtp3J9jaa9OihCyAgCAIAgCAIAgCAIAgCAIAgPOplDGOcdzWl3oL/AJLSyW2LZmK1kkfOm3cZlZBHxlqG9d4dc/3rqj6ZP5rJv8lvmxe2EEQeEU/0PE+wuSx4yAnQuD2gsPK+YAKZfJZOLvX5I1CdGRtZsAFeZaa5LvuTGF1VlLos0ZGtgW7C661ldUXFZbWWGGUOGisoyTITTR6hbGDQXs2xR9L9JdG5rY/pUgySyTQw2adMrmQSRHkbZTu3jLYCe9qG0c8jaKIFgimlpHydl2rw/PZ2QyOY1nZ3sQNS61yG21A2+UBg1tWGjRcLbEkdYQ1ZVcTq96qMi0sKqyq1k2YqmslqyxgtEY1lojp9zXceDmurKlxJaxrnNzCx7ze7GLHgct16r1o41ME/OhRek77ZNeCz7AOLaVgOhjleD0LX3t81WdSemTGS+xNxFrRKP5PoZpuAV6CHMUUz7nK3MBAEAQBAEAQBAEAQBAEAQBAeVZDnY9h+01zfUELnbHdBo2i9Janzf7QWStZDKz+hkuT8LtMp8LhUvS9qlOt/gtc7c1GaInayoEjKWvjtfRrv1XtOYA+ebyspuJW699L7eP7kfJkpqNqLfhdcJHyAG4Iilb9yWNv8zXeqqc6hwhF+2q/2WGNdv1RKxPsbqtT0epKkuCdw6vU+m4h2VljocRtxVrVeQLKiYhxEHepsLkR5VlI2o2Me5xlwuWOle85pGZ54WyPJuX56d411O9p6WXRWRNNjMrB9mXExzYm+KolibGI2t7V7GGMaSF0z3F0m4l1mk8b8MO2IUGWarxPkuFl6OsaiBrsQ6quuvJldZWq+svoqq23UnwhoR5Uc7aHhWVAjjfIdzGud+6CV2xoepbGJrbLbBspWA4h9Gw+WoJ+smlcGdXWsD4Dvlegvp9bIjDxFFRTb6dMpeWTXs7pJPowaQbyyksvvIeGtDj4kFQup7Z3xjEk4WsKZSkfREDLNA32AHoFe1pqKRTyerbO66GAgCAIAgCAIAgCAIAgCAIAgCGTVe1WBvY+XtI7wyOfrvaWvJOU23HXivMZFVtFzsiuC7x7a7atkmacxSgfRufC8F1NKdD1GrHjlI3l9oXG4q8xr4XxUl3K26qVTcf2klsjVnIHN7z6clkjRqX0zyXBwHEsdcgcjZcc2tSWyXZ9vszriT0aa8f8AC7wzNdexvlNj5tDgfAtc0+a85bRKvTUuITUlwe8byNy4p6GXEkqXEbb1Khc0cJ1EpBifVS4ZBwlSZTcT6rssk5uk6SYn1WryTKpMGoxPqo88g7RqImorC5RJ2uRIjWkYpK4HU4QFX29xEMhEANjL7x+GNpFz4k2HqrrpOPrL1H2RXdQu0jsRX8Bwp9ZIwuaW0sWjRfQgG5aObnHVx8egVpmZUceD0+pkLHola1r2RuvYfCS+ZsuW0cV7aWBdazWgdL36WCqenUSst9WRNzrYwr9OJsZejKYIAgCAIAgCAIAgCAIAgCAIAgCA6uYCCCLg8DuK1lFSWjMp6cmsdvtnIw4tLB2MwNhwY8bwOXBw8+SoMqDxblZXwmW2NNX1uufc0vQNkp80rNJaWQtlZr34XG1zzGa4J5OaeCt5qNsdr7SXH5IEN1ctY+C3w1oMkNTDrBO0RSj+rkDjkcQNxu4tPD1VVZS3XKqf1R5X3RZQs+dWQ7PuWBUZYd0EByHnms6tGNEd+3dzW29muxHBmdzWNzM7UdSVqZSRwhkXW0U29EYfC1ZV27XF9QYYIHTNH2mOtu3u1Fst+JIVyulRjXusloV/x7c9sI6mFtFS9rUQ051kmeJJbH/ZwsuGRA9G5yebjfkpuPZGuhyj9KXH3+5HvhvtUfLNn7KbNia2mSCOze7pe25jfzPVVuLjSypuyfYlZN6ojsh3Nl08DWNDGNDWtFgBuAXoq4KEdsSlk3J6s9FuYCAIAgCAIAgCAIAgCAIAgCAIAgCAwMcw4TwujO86tPwuHun8vAqNlUetW4namx1zUkaJ2n2TmEzpI3djM5nZyNcAWyMOh13HTjuNhuVVTmPHXpXLt2LKdCvfqVPnyV2lmOHVUkJzSU7mh7tLlrSLCQgaaHunmLdFLshHMpUlxLwRoSeNbo+xO/prRfG79xyrf0i9+UTX1Ckl8Nr454xJGbtNwLixuDYghQsjGnTLbIk1WxtjuRlKOdRdYAQzoLoYOHOA1JAHM6cL/kVvXXKb0ijDko8so9RjE9dK+mpu7CbBzyDcMF8zyeAdcabyABxK9FXjU4lanPuVE77L57I9j02YwEFk+SR8b21BYyRujg2LnY2IObUbtByWM3NVcoprVNdjOLjOUXzo0+5bNl9ky6qLhI+WWQWfI8ABjBa5AbpwaPTmVDV8svbTCOkfJ2lXHH1sk9WbqoaRkTGxsFmtFh+ZPUnXzV9TVGqCiionNzluZkLqahAEAQBAEAQBAEAQBAEAQBAEAQBAEAQEHtjTMdSyOc0FzAC0neDcDQqv6jCDpk2udOCVhykrUkzT8NNesleRp2ETf3nyE/whUztccSKi/P8A8LaNad7bXg83bL0va9qIwNHBzLXY7MLXyHQEdLJHqlyhtf8Akw8Gvdu0O9Ns9HGySOMvYx5DgATeKQC3aRv3g7tCTuC2efZNpyjyv9oLGjBNJlTxWvxCjkzPka9hsLixY8gbyzex1rbrXtxVxCmjIh20K2Vt1Mu+pkO9oQyi0Hf43f3fKwuVF/Roa/Vwd/1J6duT3pdsJ3gEU8VjzqGMPo43CPpFS8sxHqE3+3/ZK0uJ1knu00I6moa//lgqNLBx6+XJ/wCGd45N0+yX+TOpaB5aTU5XueCC0X7Njb+40HfewuTqfAKNdkqGioWiXnySKqtybsepmU1MxgsxjWDjlaG38bb1FldZY0pS1OyhGEXtRE7LNtFIec85/wD0I/JTepP+JFfZEXEXySfnVm7NncPhjia+JuXtWMcTckm7QQLuJ013K8w6a4wTgiovsnOTUmSqmHAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIDWG2+Jkzy5nHs4RuubAMZmebc75l5nNsndkemnx2LvEgq6vU0KFDLXz/WRCOnY8C3aDPJYXs4i1he+6y7y+EpXpzbbRqnkWvdHhHuMGnIvNXS9ezDIhbx4Lmsqt/8Aiq1NnRZ++wiqv/0yPSWokmPLtXyE+JjsPmpcHmT7QUThL4eHeTZhM2gwxmjaMkc3NY4/33E/NdHi5cu9mn4OfxGOn9B3GN4a7/cXH7sTP5XBY+Hyl/MM+rQ/5bPKWuwgnvUsrD4OHyEi2Veav3pmHPG8xZ0D8GOoErD0z6fMrbTN+zNdcXxqjLo5aK9ocQqIjwD3HJ55mhvqVpNX6fNUmbRdWvyzaJxsVe0XjnhqBwzsyEjo6M2KgSliSfzxcWS16yWsZKSPLZ/E5O3fSyU7YS1rpbNcXAlzwTbU6EvJ39FnOphKpXQlr2RjFukrPTktDemybr0kPGzbehIAVrgS1oiVuUtLWSymkcIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAx6+rbFG6R5s1oufyA6nd5rndYq4uTN4Rc5KKNE7cYs1sMzn+9P2jWtG/NJe/kLrz2DXK/I9T25LjIkqqNnkq9BjmI1LWsgY1oADXSlvEaFxe64v0AurG3Gxam7LPJFrvyLEoQJD9DXym9VVSSHk3cPAuuPkor6pXDiqB2WBKX1yJKk2So2f0Wc83ku+W75KJZ1S+XZ6EiGDVH7kpBQxM9yJjfusaPwCizyrp95M7xprj2RkArj6kvdm+2PscOAO8A+Iv+KyrJrs2YcIvwYdTg9PJ78EZ65QD6ixUiGbfDtI5Sxqpd0iGq9hqR/u54z+q649HA/iplfWLY/UkyPPp9b+lkZ+iNXTnNS1F/wBW5YT0IN2nzU2PUsa1aWIjvDur5gzFGP1EFTG+ths5rHRlwGUuY4g5rjuusQd1t5XaWNVbS4VPjuclfZXap2I3TsDjrQRFmvHNZ0buGYi/o4fPxUHp9zpsdMyRm1KyPqxNhK/KkIAgCAIAgCAIAgCAIAgCAIAgCAIAgOCVhtIGutrce7d3Zxn6ph3/ABuH2vujh6rzfUMz1Hsj2LrCxti3yNPYww11f2LTaOEZXOHAA/WO8Se6PAKyxo/C42unLIt8vXv014Re4GsDQ2O2VoDQG2sABoNF566VjnrPXkt64xjHSJ3XA3CAIAhgIDlDJwgOUBH4/hwqKeSKwuRdh5PGrbelvAqbgZDqtT14OGTV6lbXki9g8TElOI72kh7pHG1yWOH4eIUvqlMoWK1eSPg2Kdfpy8G9tmcU+kQNcffb3X/eHHzFj5q3wr/WqTKvJq9OxrwSymHAIAgCAIAgCAIAgCAIAgCAIAgCAIPwUnbTaC96aI9JHD/lj8/TmqLqOb/Lh3LTCxW/nkayxTFJHEwUjc8u5z/6OHq527N0/Hco2NiRgvVv4Xt7kq69y/h1rV/6MbB9jIIxml+ukOpLvd8m8fE3W2T1WyXFfCNacBR5nyyxtjDQA0AAbgAAB5BVUpuT1lyTUkuEFqZ0CA5QCyaA5ylZ2v2HAynkm1+xjVDKVn05ew3R9zqFn05+xjdH3O2UrXbJeDbVadyh41RyUNV9MiF4nuOcDhnN3sPQ7weYHn6TGuhl0+nL6tCnvrlj2712Nq7B40wStLXAxTgAHhm+wfW7bdVCwpyxr3XM75cVdX6kPBs5ej7lMEAQBAEAQBAEAQBAEAQBAEAQEVi20EFPcPdd/wADdXeY4eaiZGZXSuWd6sednZFC2k26dlOeRtPGdwzd937W8/sj1VTPJyMp7a1wWEMemnmxmrcX2mnqSYaJjy3c57Qc7r8vgG/U6+Cl42DXR89rWpyuyZ2/LUuCYwWmr2xtYfo8DQNwYXO6khrg258VGyrsRy1esn+TtRDIS04SJiOnl+3Pf7kbG/xZlAd9H7a/9kuNdnmRkRx23uc771v5QAuE7d3ZaHVJrydn34W8wT8gR+K0ht/dqZer7GLLBOd07W/dhF/Vz3KUrqI/s1/LOMq7H2loYE2CSv8AerZ/2crPk0LvHqFce1aOLxZvvNnidl+dZVH/AIn+C2/VF4rRj4J+ZM4/RJnGoqT/AMX/AAWf1V/0IfAx/qZ1dsbAd8s58ZP/ABWP1aX9CHwEf6mdP0GpeLpj+2P+1P1ezxFD4CHuzt+g9Hyk/f8A8Fj9Xu9kZ+Ar92eEuxDWnNBUSxOG6/e8rgtIXaPV01pOGpzeA09YyPR1HiLGljzDVxkWLX3a8jlew18yt4X4cpKa+VmkqshLa+UQ2D1dRQvIlhlbTOdc373Z33ODxoeF+fipeRVXlR1g1u8EemdlEtJL5Temx+2sEsYbJMwlu6TMCHDhnP2XePRMbInCOy/jTyYvpTe6rlFyima4ZmkOB3EEEeoU+M4y7MhtOPc7rcwE1QCAIAgCAIAgCAIAgI7FcZhgH1jteDBq4+A/M6KNdlV1d3ydq6Zz7I13tB7QXvJjizDgY4e/L+28aM9R4lV1l113P0x+5Orx66+/zMqMrK6a/eZStPL62U87nRoPgom7Epev1skbb7OF8qOlLspTNdnkDpnne+Y5r/s7vW60s6pa+IcI2jgwT1lyycjaGgNaA0DcALAeQVfOyU3rJ6kqMYx7LQ5WhtqwhgIZCAIAgCGAgCGQgCAIhqEC19wsptdg+SDxDZeCQ547wS8Hxd3XmWjT0srKnqc4/LZ8yIdmFBvWPDMJmI4rQnMD27Bvey7X2/Wy6+ocFY1Sxr/oe1kOyF1fEluRadnfbMHWbNYHlJ3b+ErRb1aF3l8TV2+ZHBKmf/qzY2F7ZU0oGY9mTuzEFp8HjT1ss158JPSfD+5ieJNLVcliY4EXBuDuI3FTYyUuxGf3OVsYCAIAgCAIDGxGvjgZnldlbu53J3AAbzvXK22NUd0jeuuVktsSgbR7fOAtEDGDo2wzSvPJjRuPr4hVM822/WNfC8ssYYca+bOfsUaWlqKlxdO90UZ17JjiZH3/AK6Xf+yPVRpZFNP0fNL3ZIjTKzvwvYkqWmZG0MjaGNHBosPHqeqrrbp2vdN6kuFcYLSKPZcTfkIAgF0AQBAEAQBAEAQBAEAQBAEAQBAAVlPQETi2z1PUXL2Wefts7rvM7ned1Po6jdV51XsRrcOuzl9yCZsxV05vSVNx8D+6D4jVp+SsF1DGvWlsSJ8JdVzXIlsI23rKQgVEUkI4vZd0R6uZqPMElbRp/djT/sayn4uh/c2zsntnHVANeWZne49h7j+nR3T/AEUjHzJOXp2rRka7G0W+t6otqsURAgCAIAgKx7QWk0zbG31rev2Xqs6pxTqybgc2muoqRoObe473HVx6X4DoLBefsyJvhcIu41qPJ69n1XA3GRYGgyINBkQDIgGRAMnVAOz6oB2fVAOz6oB2fVAOz6oB2fVAOz6oB2fVAOz6oB2fVAMiAZEGgyIDjIgHZ9UMnPZ9UA7PqtlJp8BxT7mKzDI2uL2NDHE3JZ3cx5uA0d5hSfjbfpk9TkseGvCNsbI1T5KZrpHZnXc253kA2F+Z6r0eBY51clDlVqFjSJlTSMEB/9k=">
+     
+     
+  
+  <ul>
+
+<li><h3 id="tema2"> 1. EMPATIA </h3>
+
+
+<li><h3 id="tema2"> 2. RESPONSABILIDAD SOCIAL </h3>
+
+
+<li><h3 id="tema2">3. JUSTICIA SOCIAL</h3>
+
+
+<li><h3 id="tema2">4. ACCION COLECTIVA</h3>
+
+
+<li><h3 id="tema2">5. EDUCACION Y SENCIBILIZACION </h3>
+
+ 
+<li><h3 id="tema2">6. SOLIDARIDAD</h3>
+
+ <div class="container content">
+        <button type="button" class="btn btn-interactive" data-toggle="modal" data-target="#interactiveModal">
+            ¿Cual es su importancia?
+        </button>
+
+        <div class="modal fade" id="interactiveModal" tabindex="-1" role="dialog" aria-labelledby="interactiveModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="interactiveModalLabel">Importancia de la Conciencia Social</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      Ayuda a crear una sociedad más justa, donde todos tengan acceso a los mismos derechos y oportunidades. Al trabajar juntos, las personas pueden lograr cambios significativos en sus comunidades. Además, al estar conscientes de las necesidades de otros, se pueden tomar acciones para reducir las brechas sociales y económicas.
+Una sociedad con conciencia social es más compasiva y dispuesta a ayudar a los más necesitados. Al entender y abordar los problemas sociales, se contribuye al desarrollo sostenible y al bienestar de las futuras generaciones.
+
+La conciencia social es esencial para construir comunidades más fuertes y resilientes, donde todos sus miembros puedan prosperar.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Conciencia Social</p>
+    </footer>
+
+
+<table border id="tema3"> 
+	<thead>
+		<tr>
+			<th>TIPOS DE CONCIENCIA</th>
+			<th>DEFINICIÓN</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>consciencia individual</td>
+				<td> Es la conciencia de uno mismo y de cómo el entorno lo puede perjudicar o favorecer. Se establece lo que es bueno y malo para uno mismo.</td>
+				</tr>
+				<tr>
+				<td>Cconsciencia social</td>
+				<td> La conciencia social se refiere a cuánto podemos empatizar con los pensamientos y los sentimientos ajenos, en particular los que provienen de otras razas, culturas, orígenes y contextos, así como nuestra capacidad de leer indicaciones sociales para comunicarnos y hacer elecciones.</td>
+				</tr>
+				<tr>
+				<td>consciencia emocional</td>
+				<td>La conciencia emocional significa saber cuándo los sentimientos están presentes en nosotros mismos y en los demás . Está estrechamente relacionado con la alfabetización emocional, lo que significa poder etiquetar los sentimientos con palabras de sentimiento específicas.</td>
+				</tr>
+      <tr>
+				<td>consciencia temporal</td>
+				<td>se refiere a la conciencia del medio que le rodea y de cómo afecta a uno mismo y a los demás en la línea del tiempo. Se establece lo que es bueno y malo para el futuro de la comunidad.</td>
+				</tr>
+       <tr>
+				<td>consciencia psicológica</td>
+				<td>es la que tiene el individuo sobre su propia presencia, de los hechos y objetos que se ubican fuera del propio yo y la reflexión de los actos propios.</td>
+				</tr>
+       <tr>
+				<td>consciencia moral</td>
+				<td>es la capacidad de reflexión del ser humano sobre aquello que es correcto en relación con el obrar. En consecuencia, se relaciona de manera directa con la ética; puesto que, la ética reflexiona acerca de la bondad o maldad de nuestros actos.</td>
+				</tr>
+			</tbody>
+	</table>
+  </p>
+
+  <a target="_blank"
+     href=https://concepto.de/conciencia-social/">Mas informacion sobre la conciencia social</a>
+                                                                      
+       <aside>
+                <h4 id="contactos"> Autor de la pagina web </h4>
+                <p> ANA SOFIA GONZALEZ PEREZ GRADO 10° SKOLMI TECNOLOGÍA</p>
+                                  
+<a href="#seccion1">Ir a la sección 1</a>
+            </aside>
+
+</div>
+<footer>
+
+</footer>
+
+</body>
+</html>
